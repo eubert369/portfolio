@@ -1,0 +1,89 @@
+
+/*====================================================================*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+.main {
+    /* background-image: url("https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg"); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    overflow-y: scroll;
+    font-size: 24px;    
+}
+.main::after {
+    content: "";
+    background-color: rgb(0, 8, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main > h1, .main > p {
+    text-align: center;
+    font-family: 30px;
+    z-index: 2;
+    position: relative;
+}
+.main-content {
+    background-color: rgb(27, 27, 50, .9);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 5px purple;
+}
+#name, #email, #number, #dropdown, #comment {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+label[for=name],
+label[for=email], 
+label[for=number],
+label[for=dropdown],
+label[for=comment] {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#pwd, #regular {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#comment {
+    min-height: 180px;
+}
+label[for=comment]{
+    margin-top: 30px;
+}
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #37af65;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
